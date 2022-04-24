@@ -26,12 +26,16 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-
 game_images = [rock, paper, scissors]
+#User input
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 print (game_images[user_choice])
+
+#Computer choice
 computer_choice = random.choice(game_images)
 print (f' Computer chose: \n {computer_choice}')
+
+#Comparing and checking who won
 if game_images[user_choice] == rock:
     if computer_choice == rock:
         print ("It's a draw.")
@@ -53,3 +57,6 @@ if game_images[user_choice] == scissors:
         print ("Scissors cut paper. You won!")
     else:
         print ("It's a draw")
+
+        
+        
